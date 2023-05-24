@@ -16,6 +16,8 @@ router.post('/', function(req, res, next) {
     return res.status(400).json({ error: 'Missing parameters' });
   }
 
+  //ToDo: need to check if the user_id is found in the users collection
+
   // Assuming you have the data you want to send as JSON in the following format
   const jsonData = {
     user_id: user_id,
